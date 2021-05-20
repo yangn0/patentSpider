@@ -89,6 +89,8 @@ def getDriver():
             # options.add_argument('log-level=3')
             driver = webdriver.Firefox(options=options)
             driver.maximize_window()
+            # 珠宝
+            # url = "http://epub.sipo.gov.cn/gjcx.jsp?11-01"
             url = "http://epub.sipo.gov.cn/gjcx.jsp?26-05"
             driver.get(url)
             WebDriverWait(driver, 50).until(EC.presence_of_element_located(
